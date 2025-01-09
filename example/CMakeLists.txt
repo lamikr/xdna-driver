@@ -25,3 +25,6 @@ endfunction()
 
 create_example_exec_target(example_noop_test example_noop_test.cpp)
 create_example_exec_target(runlist_noop_test runlist_noop_test.cpp)
+
+install(TARGETS example_noop_test DESTINATION bin)
+install(TARGETS runlist_noop_test DESTINATION bin)
